@@ -1,9 +1,8 @@
-# Update title
-novel.title = "Harry Potter"
-novel.save()
+# Update the title
+book.title = "Nineteen Eighty-Four"
+book.save()
 
-# Confirmation
-updated_book = Book.objects.get(id=novel.id)
-print(updated_novel.title, updated_novel.author, updated_novel.publication_year)
-
-# Expected output: Harry Potter Ten Hug 2022
+# Confirm update
+updated_book = Book.objects.get(id=book.id)
+print(updated_book.title, updated_book.author, updated_book.publication_year)
+# Expected output: Nineteen Eighty-Four George Orwell 1949
