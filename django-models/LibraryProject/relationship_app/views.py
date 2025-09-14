@@ -4,7 +4,6 @@ from .models import Book
 from .models import Library
 from django.views.generic.detail import DetailView
 
-
 # list all books
 def list_books(request):
     books = Book.objects.all()
@@ -16,5 +15,6 @@ class LibraryDetailView(DetailView):
     model = Library
     template_name = "relationship_app/library_detail.html"
     context_object_name = "library"
+
 
 
