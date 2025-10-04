@@ -9,6 +9,4 @@ class Post(models.Model):
     published_date = models.DateTimeField(auto_now_add = True)
     author = models.ForeignKey('User', on_delete=models.SET_DEFAULT, default='UNKNOWN',)
 
-class User(models.Model):
 
-    author = models.CharField(max_length=200)
